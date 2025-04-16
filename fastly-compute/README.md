@@ -1,83 +1,58 @@
-# 🧬 Sync Service
+# 🧬 Pokémon API (Fastly Compute + KVStore)
 
-This Node.js service syncs data to a Fastly KV store every minute. It can also populate the store with a base dataset.
+This API is built with @fastly/expressly and uses Fastly’s KVStore to serve Pokémon data.
 
-## 🛠️ Installation
+## 📦 Endpoints
 
-```bash
-npm install
+GET /
+
+Returns the entry for Bulbasaur from the pokemons KVStore.
+
+Example response:
+
+```JavaScript
+{
+  "name": "Bulbasaur",
+  "type": "Grass/Poison",
+  "id": 1
+}
 ```
 
-Make sure the Fastly CLI is installed on your machine. You can verify by running:
-
-```bash
-fastly version
-```
-
-If you don’t have it, install it from [Fastly's official docs](https://developer.fastly.com/reference/cli/).
-
-## ⚙️ Create the KV Store
-
-Create a new KV store using the following command:
-
-```bash
-npm run createKV
-```
-
-Example output:
 
 ```
-❯ npm run createKV
-
-> sync-service@1.0.0 createKV
-> fastly kv-store create --name=pokemons
-
-SUCCESS: Created KV Store 'pokemons' (zmgs0c96xuuf01w179n91g)
-
-A new version of the Fastly CLI is available.
-Current version: 10.17.1
-Latest version: 11.2.0
-Run `fastly update` to get the latest version.
+GET /getPokemon/:pokemonName
 ```
 
-Take note of the `storeId` returned — you’ll need it in the next steps.
+Returns the entry for any specified Pokémon in the KVStore. Replace :pokemonName with the name of the Pokémon (case-sensitive).
 
-## 🔐 Add Your API Key
+Path Parameters:
+	•	pokemonName: Name of the Pokémon (e.g. Charmander, Squirtle, Pikachu).
 
-Copy the example environment file and add your Fastly API key:
-
-```bash
-cp .env.example .env
-```
-
-Then edit `.env` and add your key:
+Example Request:
 
 ```
-FASTLY_KEY=your-api-key-here
+GET /getPokemon/Charmander
 ```
 
-## 📦 Populate the KV Store
+Example Response:
 
-Update the `storeId` in `syncDataToKV.js` with your actual store ID:
-
-```js
-const storeId = "zmgs0c96xuuf01w179n91g"; // Replace with your store ID
+```JavaScript
+{
+  "name": "Charmander",
+  "type": "Fire",
+  "id": 4
+}
 ```
 
-Then run the script to add your base Pokémon dataset:
 
-```bash
-node syncDataToKV.js
-```
+### 🛠 How it works
+	•	Data is stored in a Fastly KVStore named pokemons.
+	•	The API reads JSON entries from this store and returns them via HTTP.
+	•	It uses Fastly’s Express-like framework @fastly/expressly for route handling.
 
-You should see output confirming each insertion.
+### ⚠️ Notes
+	•	Pokémon names are case-sensitive in the current implementation.
+	•	Ensure entries in pokemons KVStore are stored as valid JSON strings.
 
-## 🔁 Simulate Syncing
 
-To test periodic syncing, run:
 
-```bash
-node app.js
-```
-
-Every minute, the script will select a random Pokémon from `extraPokemons.json` and add it to your KV store.
