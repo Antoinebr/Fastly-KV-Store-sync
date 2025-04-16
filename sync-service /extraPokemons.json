@@ -1,0 +1,181 @@
+[{
+        "id": 11,
+        "name": "Metapod",
+        "type": ["Bug"],
+        "description": "The shell covering this Pokémon's body is as hard as an iron slab. Metapod does not move very much because it is preparing its soft innards for evolution inside the shell.",
+        "height_m": 0.7,
+        "weight_kg": 9.9,
+        "abilities": ["Shed Skin"]
+    },
+    {
+        "id": 12,
+        "name": "Butterfree",
+        "type": ["Bug", "Flying"],
+        "description": "In battle, it flaps its wings at great speed to release highly toxic dust into the air. The scales on its wings are often brightly colored.",
+        "height_m": 1.1,
+        "weight_kg": 32.0,
+        "abilities": ["Compound Eyes", "Tinted Lens"]
+    },
+    {
+        "id": 13,
+        "name": "Weedle",
+        "type": ["Bug", "Poison"],
+        "description": "Weedle has an extremely acute sense of smell. It is capable of distinguishing its favorite kinds of leaves from those it dislikes just by sniffing with its big red nose.",
+        "height_m": 0.3,
+        "weight_kg": 3.2,
+        "abilities": ["Shield Dust", "Run Away"]
+    },
+    {
+        "id": 14,
+        "name": "Kakuna",
+        "type": ["Bug", "Poison"],
+        "description": "While awaiting evolution, it hides from predators under leaves and in nooks of branches. It remains virtually immobile.",
+        "height_m": 0.6,
+        "weight_kg": 10.0,
+        "abilities": ["Shed Skin"]
+    },
+    {
+        "id": 15,
+        "name": "Beedrill",
+        "type": ["Bug", "Poison"],
+        "description": "Beedrill is extremely territorial. No one should ever approach its nest—this is for their own safety. If angered, they will attack in a furious swarm.",
+        "height_m": 1.0,
+        "weight_kg": 29.5,
+        "abilities": ["Swarm", "Sniper"]
+    },
+    {
+        "id": 16,
+        "name": "Pidgey",
+        "type": ["Normal", "Flying"],
+        "description": "Pidgey has an extremely docile nature. It prefers to avoid conflict. If disturbed, however, it can ferociously strike back.",
+        "height_m": 0.3,
+        "weight_kg": 1.8,
+        "abilities": ["Keen Eye", "Tangled Feet", "Big Pecks"]
+    },
+    {
+        "id": 17,
+        "name": "Pidgeotto",
+        "type": ["Normal", "Flying"],
+        "description": "This Pokémon flies over its territory in search of prey. It defends its sprawling territory fiercely against intruders.",
+        "height_m": 1.1,
+        "weight_kg": 30.0,
+        "abilities": ["Keen Eye", "Tangled Feet", "Big Pecks"]
+    },
+    {
+        "id": 18,
+        "name": "Pidgeot",
+        "type": ["Normal", "Flying"],
+        "description": "This Pokémon has beautiful feathers. Its magnificent wings are often the envy of other bird Pokémon.",
+        "height_m": 1.5,
+        "weight_kg": 39.5,
+        "abilities": ["Keen Eye", "Tangled Feet", "Big Pecks"]
+    },
+    {
+        "id": 19,
+        "name": "Rattata",
+        "type": ["Normal"],
+        "description": "Rattata is cautious and quick to act. If you see one, it is certain that 40 more live in the area.",
+        "height_m": 0.3,
+        "weight_kg": 3.5,
+        "abilities": ["Run Away", "Guts", "Hustle"]
+    },
+    {
+        "id": 20,
+        "name": "Raticate",
+        "type": ["Normal"],
+        "description": "Its rear feet have three toes each. They are webbed, enabling it to swim across rivers.",
+        "height_m": 0.7,
+        "weight_kg": 18.5,
+        "abilities": ["Run Away", "Guts", "Hustle"]
+    },
+    {
+        "id": 21,
+        "name": "Spearow",
+        "type": ["Normal", "Flying"],
+        "description": "Very protective of its territory, it flaps its short wings busily to dart around at high speed.",
+        "height_m": 0.3,
+        "weight_kg": 2.0,
+        "abilities": ["Keen Eye", "Sniper"]
+    },
+    {
+        "id": 22,
+        "name": "Fearow",
+        "type": ["Normal", "Flying"],
+        "description": "It has the stamina to fly all day on its broad wings. It fights by using its sharp beak.",
+        "height_m": 1.2,
+        "weight_kg": 38.0,
+        "abilities": ["Keen Eye", "Sniper"]
+    },
+    {
+        "id": 23,
+        "name": "Ekans",
+        "type": ["Poison"],
+        "description": "Ekans curls itself up in a spiral while it rests. This position allows it to quickly respond to a threat from any direction with a headbutt or bite.",
+        "height_m": 2.0,
+        "weight_kg": 6.9,
+        "abilities": ["Intimidate", "Shed Skin", "Unnerve"]
+    },
+    {
+        "id": 24,
+        "name": "Arbok",
+        "type": ["Poison"],
+        "description": "The pattern on its belly is said to be a frightening face that wards off enemies. It has been admired and feared since ancient times.",
+        "height_m": 3.5,
+        "weight_kg": 65.0,
+        "abilities": ["Intimidate", "Shed Skin", "Unnerve"]
+    },
+    {
+        "id": 25,
+        "name": "Pikachu",
+        "type": ["Electric"],
+        "description": "Whenever Pikachu comes across something new, it blasts it with a jolt of electricity. If you come across a blackened berry, it’s evidence that this Pokémon mistook the intensity of its charge.",
+        "height_m": 0.4,
+        "weight_kg": 6.0,
+        "abilities": ["Static", "Lightning Rod"]
+    },
+    {
+        "id": 26,
+        "name": "Raichu",
+        "type": ["Electric"],
+        "description": "If the electrical sacs become excessively charged, Raichu plants its tail in the ground and discharges. Scorched patches of ground will be found near this Pokémon’s nest.",
+        "height_m": 0.8,
+        "weight_kg": 30.0,
+        "abilities": ["Static", "Lightning Rod"]
+    },
+    {
+        "id": 27,
+        "name": "Sandshrew",
+        "type": ["Ground"],
+        "description": "Sandshrew’s body is configured to absorb water without waste, enabling it to survive in an arid desert. It burrows deep underground in arid locations far from water.",
+        "height_m": 0.6,
+        "weight_kg": 12.0,
+        "abilities": ["Sand Veil", "Sand Rush"]
+    },
+    {
+        "id": 28,
+        "name": "Sandslash",
+        "type": ["Ground"],
+        "description": "It curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.",
+        "height_m": 1.0,
+        "weight_kg": 29.5,
+        "abilities": ["Sand Veil", "Sand Rush"]
+    },
+    {
+        "id": 29,
+        "name": "Nidoran♀",
+        "type": ["Poison"],
+        "description": "Nidoran♀ has barbs that secrete a powerful poison. They are thought to have developed as protection for this small-bodied Pokémon.",
+        "height_m": 0.4,
+        "weight_kg": 7.0,
+        "abilities": ["Poison Point", "Rivalry", "Hustle"]
+    },
+    {
+        "id": 30,
+        "name": "Nidorina",
+        "type": ["Poison"],
+        "description": "When it senses danger, it raises all the barbs on its body. These barbs secrete a powerful poison.",
+        "height_m": 0.8,
+        "weight_kg": 20.0,
+        "abilities": ["Poison Point", "Rivalry", "Hustle"]
+    }
+]

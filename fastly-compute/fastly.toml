@@ -1,0 +1,26 @@
+# This file describes a Fastly Compute package. To learn more visit:
+# https://www.fastly.com/documentation/reference/compute/fastly-toml
+
+authors = [""]
+cloned_from = "https://github.com/fastly/compute-starter-kit-javascript-empty"
+description = ""
+language = "javascript"
+manifest_version = 3
+name = "fastly-compute"
+service_id = "m0f28gQ9kt8p3QvANpWZI0"
+
+[local_server]
+
+  [local_server.kv_stores]
+
+    [[local_server.kv_stores.pokemons]]
+      data = "{\"id\":1,\"name\":\"Bulbasaur\",\"type\":[\"Grass\",\"Poison\"],\"description\":\"Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun rays, the seed grows progressively larger.\",\"height_m\":0.7,\"weight_kg\":6.9,\"abilities\":[\"Overgrow\",\"Chlorophyll\"]}"
+      key = "Bulbasaur"
+
+    [[local_server.kv_stores.pokemons]]
+      data = "{\"id\":2,\"name\":\"Ivysaur\",\"type\":[\"Grass\",\"Poison\"],\"description\":\"When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs. The bulb absorbs nutrients and prepares to bloom into a flower.\",\"height_m\":1,\"weight_kg\":13,\"abilities\":[\"Overgrow\",\"Chlorophyll\"]}"
+      key = "Ivysaur"
+
+[scripts]
+  build = "npm run build"
+  post_init = "npm install"
