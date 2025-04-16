@@ -48,8 +48,8 @@ end
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Antoinebr/Fastly-KV-Store-sync
+cd Fastly-KV-Store-sync
 ```
 
 ### 2. Set up the sync service
