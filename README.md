@@ -5,7 +5,26 @@ This project demonstrates how to use Fastly's KV Store to store and sync Pokémo
 - **`sync-service/`** — A Node.js service that periodically syncs Pokémon data to a Fastly KV store using cron jobs.
 - **`fastly-compute/`** — A Fastly Compute@Edge application that can interact with the KV store (e.g. fetch Pokémon data for display or API use).
 
----
+## Diagram
+
+```mermaid
+sequenceDiagram
+    participant Client
+    participant Compute
+    participant KV as Fastly KV Store 
+    participant SyncService
+
+    Client->>Compute : GET /
+    Compute->>KV : Fetch requested data
+    
+
+    SyncService->>KV : Add data to the KV store periodically
+
+box rgba(33,66,99,0.1) Fastly Compute
+  participant Compute
+  participant KV
+end
+```
 
 ## 📁 Project Structure
 
